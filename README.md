@@ -66,25 +66,25 @@ mv2_encoder(.exe) [OPTIONS] <INPUT> <OUTPUT>
 
 **1. 빠르고 안정적인 기본 변환 (Floyd-Steinberg 디더링, GPU 셰이더 활성화)**
 ```bash
-cargo run --release -- input.mp4 output.MV2 --dither fs --shader --workers 16
+mv2_encoder(.exe) input.mp4 output.MV2 --dither fs --shader --workers 16
 ```
 
 **2. 초고속 변환 (Bayer4 디더링, NVIDIA 하드웨어 가속 사용)**
 ```bash
-cargo run --release -- input.mp4 output.MV2 --dither bayer4 --shader --workers 16 --nv
+mv2_encoder(.exe) -- input.mp4 output.MV2 --dither bayer4 --shader --workers 16 --nv
 ```
 
 **3. 최고 화질 (복잡한 매칭 연산, Shift 분석 추가, Floyd-Steinberg 디더링)**
 ```bash
-cargo run --release -- input.mp4 output.MV2 --dither fs --shader --workers 16 --complex --shift
+mv2_encoder(.exe) input.mp4 output.MV2 --dither fs --shader --workers 16 --complex --shift
 ```
 
 **4. 꽉 찬 화면으로 잘라서 변환 (Aspect: Crop)**
 ```bash
-cargo run --release -- input.mp4 output.MV2 --aspect crop --dither fs --shader --workers 16
+mv2_encoder(.exe) input.mp4 output.MV2 --aspect crop --dither fs --shader --workers 16
 ```
 
 **5. 특정 구간만 변환 (10초부터 20초까지 10초 분량)**
 ```bash
-cargo run --release -- input.mp4 output.MV2 -s 00:00:10 -t 00:00:20 --dither fs --shader --workers 16
+mv2_encoder(.exe) input.mp4 output.MV2 -s 00:00:10 -t 00:00:20 --dither fs --shader --workers 16
 ```
