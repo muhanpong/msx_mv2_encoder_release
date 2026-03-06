@@ -1,4 +1,3 @@
-# msx_mv2_encoder_release
 # MSX2 MV2 Video Encoder (Rust Native)
 
 ## 개요
