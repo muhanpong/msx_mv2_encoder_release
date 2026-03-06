@@ -1,7 +1,7 @@
 # MSX2 MV2 Video Encoder (Rust Native)
 
 ## 개요
-이 프로그램은 일반적인 동영상 파일(MP4, AVI 등)을 MSX2의 **MV2 포맷**으로 변환하는 고성능 비디오 인코더입니다. Rust로 작성되었으며, WebGPU를 통한 컴퓨트 셰이더(Compute Shader) 가속과 FFmpeg 기반의 비디오/오디오 전처리를 지원합니다.
+이 프로그램은 일반적인 동영상 파일(MP4, AVI 등)을 MSX2 규격 이상의 기기에서 동작하는 MMCSD/V4, SLT-TURBO 의 가속기능을 이용한 영상 미디어인 **MV2 포맷**으로 변환하는 고성능 비디오 인코더입니다. Rust로 작성되었으며, WebGPU를 통한 컴퓨트 셰이더(Compute Shader) 가속과 FFmpeg 기반의 비디오/오디오 전처리를 지원합니다.
 
 ## 필수 요구 사항
 - **FFmpeg**: 동영상 렌더링 및 오디오(PCM/MP3) 전처리를 위해 시스템 환경 변수(PATH)에 등록되어 있어야 합니다.
