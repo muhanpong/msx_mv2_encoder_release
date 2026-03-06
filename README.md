@@ -14,7 +14,7 @@
 명령줄에서 다음과 같은 형식으로 실행합니다.
 
 ```bash
-mv2_encoder [OPTIONS] <INPUT> <OUTPUT>
+mv2_encoder(.exe) [OPTIONS] <INPUT> <OUTPUT>
 ```
 
 ### 필수 인수
